@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha4/jars/classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="2a25fdd20d5f75558b6011724bbfbb7d97c7f5b7">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-alpha4_bac46e120a28708235fa12e5edfd970160f520af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_e0e7f58f24ee0a0d59047c7a99dafc5278ec220c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_125c3a865ff980565e290a03e320563dd45a31e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_ccd26e78da6b60399a5c1a5d8f351634e32e7822/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_48bf5d02e63c0dd3d636970bb4c07a3057ef541f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_07f901f9597d26d4d76a42ac975d4948ea7f4792/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_e068c1aa59183b602b139ef47239ad918fd70292/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="d4d400d176fdad0edbe9f34c024423083a11933e">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff139f10b32f98588b16c7480805780d4eee6f24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/Downloads/Android Studio.app/Contents/gradle/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha4/constraint-layout-solver-1.0.0-alpha4.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="cdeb2aecf7557aa5f8d2ac0e37a0e7760f48c513">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-alpha4_ce7ce739447757ceb87945f2f69a10b6f5f036ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.0"
+        sha1="e2d90a3fb09348358e25471c992b245d539c692b">
+        <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1bd3a730d44582d15d01b372c7ac5b492a836359/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Puppy</string>
+    <string name="btnEnter">Entrar</string>
+    <string name="txtWelcome">Bienvenido</string>
+</resources>
