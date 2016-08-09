@@ -9,9 +9,13 @@
     tools:context="io.github.ceeck65.android.puppy.MainActivity"
     android:background="@color/colorWithe"
     >
-
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
 
     <LinearLayout
+        android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -35,7 +39,6 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             />
 
-
     </LinearLayout>
 
     <Button
@@ -55,7 +58,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginRight="15dp"
         android:layout_marginEnd="15dp"
-        android:id="@+id/button2"
+        android:id="@+id/btnEnter"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

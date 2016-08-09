@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.gradle/2.14.1/
+.idea/workspace.xml
+app/libs/
+app/src/main/java/io/github/ceeck65/android/puppy/Pets.java
+app/src/main/res/drawable/
