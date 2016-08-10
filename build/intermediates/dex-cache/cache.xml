@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="false"
         revision="24.0.0"
-        sha1="36c53e2a83a0b75f6b95840089ef387eee810565">
+        sha1="5bf67e79911464d30f0aada127d108a2d483c63e">
         <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/pre-dexed/debug/instant-run_1bd3a730d44582d15d01b372c7ac5b492a836359.jar" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="false"
         revision="24.0.0"
-        sha1="146e9d68d0fa8f5e981094a3728a480346ac2220">
+        sha1="142b6d0b526255a4cd30cb342bd75a51c90e9b42">
         <dex dex="/Users/mariofernandez/AndroidStudioProjects/Puppy2/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_ff139f10b32f98588b16c7480805780d4eee6f24.jar" />
     </item>
     <item

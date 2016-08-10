@@ -2,4 +2,6 @@
     <string name="app_name">Puppy</string>
     <string name="btnEnter">Entrar</string>
     <string name="txtWelcome">Bienvenido</string>
+    <string name="titleBar">Puppy App</string>
+    <string name="titleBarFavorites">Favoritos</string>
 </resources>
