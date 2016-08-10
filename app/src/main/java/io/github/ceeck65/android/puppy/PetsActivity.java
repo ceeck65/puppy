@@ -26,15 +26,12 @@ public class PetsActivity extends AppCompatActivity {
     private TextView titleBar;
     private Toolbar toolbar;
 
-
-
+    ArrayList<Pets> dataPets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pets);
-
-        ArrayList<Pets> dataPets =  new ArrayList<Pets>();
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         imgview = (ImageView) findViewById(R.id.imgPets);
@@ -50,41 +47,59 @@ public class PetsActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/d31c02171770706d32358d4b1678d1f2.jpg", "Azabache", "0", false));
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/e8b99819376e1f6cad519e15afead182.jpg", "Missiu", "7", true));
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/33b8f3619da779a1ae409ac708da1aa6.jpg", "Negrin", "10", true));
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/ef29a541ba49353ffaacfe18bce25c76.jpg", "Nerón", "0", false));
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/930f13cb029d66edb18265cebebd3035.jpg", "Puppy", "0", false));
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/f3eaeb1a408c8e5540b18a93294c56a1.jpg", "Titi", "6", true));
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/17d4242071c488b1e0a481b8f0d1268e.jpg", "Yailon", "0", false));
-        dataPets.add(new Pets("http://www.mascotasderaza.com/arch/b3f7c82d39c02bbcd3952d86fc412949.jpg", "Xiena", "9", true));
-
 
         recyclerViewPets = (RecyclerView) findViewById(R.id.rvPets);
         layoutManagerPets = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerViewPets.setLayoutManager(layoutManagerPets);
 
-        adapterPets = new PetsAdapter(dataPets, this);
-        recyclerViewPets.setAdapter(adapterPets);
-
-
-
-        imgFavorite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FavoritesActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
-
-
+        inicializePetsList(savedInstanceState);
+        adapterPets();
 
     }
 
 
+    public  void inicializePetsList(Bundle bundle) {
+        ArrayList<Pets> listPets = null;
+        try {
+            listPets = (ArrayList<Pets>) bundle.getSerializable("Pets");
+        } catch (Exception e){
+
+        }
+
+        if (listPets == null) {
+            dataPets  = new ArrayList<Pets>();
+
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/d31c02171770706d32358d4b1678d1f2.jpg", "Azabache"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/e8b99819376e1f6cad519e15afead182.jpg", "Missiu"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/33b8f3619da779a1ae409ac708da1aa6.jpg", "Negrin"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/ef29a541ba49353ffaacfe18bce25c76.jpg", "Nerón"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/930f13cb029d66edb18265cebebd3035.jpg", "Puppy"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/f3eaeb1a408c8e5540b18a93294c56a1.jpg", "Titi"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/17d4242071c488b1e0a481b8f0d1268e.jpg", "Yailon"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/b3f7c82d39c02bbcd3952d86fc412949.jpg", "Xiena"));
+            dataPets.add(new Pets("http://www.mascotasderaza.com/arch/d31c02171770706d32358d4b1678d1f2.jpg", "Azabache"));
+        } else {
+            dataPets = listPets;
+        }
+
+
+    }
+
+    public  void adapterPets() {
+        adapterPets = new PetsAdapter(dataPets, this);
+        recyclerViewPets.setAdapter(adapterPets);
+    }
+
+
+    public void goFavorite(View view) {
+        Intent intent = new Intent(PetsActivity.this, FavoritesActivity.class);
+
+        Bundle bundleObject = new Bundle();
+        bundleObject.putSerializable("PetsFavorite", dataPets);
+
+
+      //  intent.putExtras(bundleObject);
+        startActivity(intent);
+    }
 
 }

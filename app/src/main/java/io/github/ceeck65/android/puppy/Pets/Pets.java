@@ -8,29 +8,43 @@ public class Pets {
 
     private  String imgPetUrl;
     private  String namePet;
-    private  String pointPet;
+    private  Integer pointPet = new Integer(0);
     private  Boolean favorite;
 
-    public Pets(String imgPetUrl, String namePet, String pointPet, boolean favorite) {
+    public Pets(String imgPetUrl, String namePet) {
         this.imgPetUrl = imgPetUrl;
         this.namePet = namePet;
-        this.pointPet = pointPet;
-        this.favorite = favorite;
     }
 
     public String getImgPetUrl() {
         return imgPetUrl;
     }
 
+    public void setImgPetUrl(String imgPetUrl) {
+        this.imgPetUrl = imgPetUrl;
+    }
+
+    public Boolean getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(Boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    public Integer getPointPet() {
+        return pointPet;
+    }
+
+    public void setPointPet(Integer pointPet) {
+        this.pointPet = pointPet;
+    }
+
     public String getNamePet() {
         return namePet;
     }
 
-    public String getPointPet() {
-        return pointPet;
-    }
-
-    public boolean getFavorite() {
-        return favorite;
+    public void setNamePet(String namePet) {
+        this.namePet = namePet;
     }
 }
