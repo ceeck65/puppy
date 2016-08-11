@@ -1,10 +1,12 @@
 package io.github.ceeck65.android.puppy.Pets;
 
+import java.io.Serializable;
+
 /**
  * Created by mariofernandez on 5/8/16.
  */
 
-public class Pets {
+public class Pets implements Serializable{
 
     private  String imgPetUrl;
     private  String namePet;

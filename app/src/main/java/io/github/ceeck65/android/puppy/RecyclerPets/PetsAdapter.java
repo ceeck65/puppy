@@ -24,13 +24,13 @@ import io.github.ceeck65.android.puppy.R;
 
 public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.petsViewHolder> {
 
-    private ArrayList<Pets> item;
+    private ArrayList<Pets> listPest;
     Context context;
     int Like;
 
 
-    public PetsAdapter(ArrayList<Pets> item, Context context) {
-        this.item = item;
+    public PetsAdapter(ArrayList<Pets> listPest, Context context) {
+        this.listPest = listPest;
         this.context = context;
     }
 
@@ -44,7 +44,7 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.petsViewHolder
 
     @Override
     public void onBindViewHolder(final petsViewHolder petViewHolder, int position) {
-        final Pets pets = item.get(position);
+        final Pets pets = listPest.get(position);
         petViewHolder.namePet.setText(pets.getNamePet());
         petViewHolder.pointPet.setText(String.valueOf(pets.getPointPet()));
         PicassoClient.loadPicasso(context, pets.getImgPetUrl(), petViewHolder.imagePet);
@@ -92,7 +92,7 @@ public class PetsAdapter extends RecyclerView.Adapter<PetsAdapter.petsViewHolder
 
     @Override
     public int getItemCount() {
-        return item.size();
+        return listPest.size();
     }
 
 
